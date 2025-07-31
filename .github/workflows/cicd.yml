@@ -38,7 +38,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: ./socket-chat-app
-        file: ./Dockerfile
+        file: ./socket-chat-app/Dockerfile
         push: true
         tags: ${{ secrets.DOCKER_HUB_USERNAME }}/swa-structure:latest
 
